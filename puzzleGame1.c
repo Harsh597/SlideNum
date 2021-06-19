@@ -257,57 +257,57 @@ void main()
   //  box_value();
     //shuffle_box();
 
-    // do
-    // {
-    //     gotoxy(Y1, X2 + 1);
-    //     printf("Enter any key to move pieces...(ESC to exit)\n");
-    //     key = getkey();
-    //     Beep(1500, 10);
-    //     Beep(1300, 50);
+    do
+    {
+        gotoxy(Y1, X2 + 1);
+        printf("Enter any key to move pieces...(ESC to exit)\n");
+        key = getkey();
+        Beep(1500, 10);
+        Beep(1300, 50);
 
-    //     switch (key)
-    //     {
-    //     case 72: //upp arrow key
+        switch (key)
+        {
+        case 72: //upp arrow key
 
-    //         if (!(cur_pos >= 12 && cur_pos <= 15))
-    //         {
-    //             swap(&arr[cur_pos + 4], &arr[cur_pos]);
-    //             cur_pos += 4;
-    //             update_box_value();
-    //             break;
-    //         }
-    //     case 80: //down arrow key
-    //         if (!(cur_pos >= 0 && cur_pos <= 3))
-    //         {
-    //             swap(&arr[cur_pos - 4], &arr[cur_pos]);
-    //             cur_pos -= 4;
-    //             update_box_value();
-    //             break;
-    //         }
-    //     case 75: //left arrow key
-    //         if (!(cur_pos == 3 || cur_pos == 7 || cur_pos == 11 || cur_pos == 15))
-    //         {
-    //             swap(&arr[cur_pos + 1], &arr[cur_pos]);
-    //             cur_pos += 1;
-    //             update_box_value();
-    //             break;
-    //         }
-    //     case 77: //right arrow key
-    //         if (!(cur_pos == 0 || cur_pos == 4 || cur_pos == 8 || cur_pos == 12))
-    //         {
-    //             swap(&arr[cur_pos - 1], &arr[cur_pos]);
-    //             cur_pos--;
-    //             update_box_value();
-    //             break;
-    //         }
-    //     case 27:
-    //         break;
+            if (!(cur_pos >= 12 && cur_pos <= 15))
+            {
+                swap(&arr[cur_pos + 4], &arr[cur_pos]);
+                cur_pos += 4;
+                update_box_value();
+                break;
+            }
+        case 80: //down arrow key
+            if (!(cur_pos >= 0 && cur_pos <= 3))
+            {
+                swap(&arr[cur_pos - 4], &arr[cur_pos]);
+                cur_pos -= 4;
+                update_box_value();
+                break;
+            }
+        case 75: //left arrow key
+            if (!(cur_pos == 3 || cur_pos == 7 || cur_pos == 11 || cur_pos == 15))
+            {
+                swap(&arr[cur_pos + 1], &arr[cur_pos]);
+                cur_pos += 1;
+                update_box_value();
+                break;
+            }
+        case 77: //right arrow key
+            if (!(cur_pos == 0 || cur_pos == 4 || cur_pos == 8 || cur_pos == 12))
+            {
+                swap(&arr[cur_pos - 1], &arr[cur_pos]);
+                cur_pos--;
+                update_box_value();
+                break;
+            }
+        case 27:
+            break;
 
-    //         // default:
-    //         //     break;
-    //     }
-    //     //  nosound();
+            // default:
+            //     break;
+        }
+        //  nosound();
 
-    // } while (key != 27);
+    } while (key != 27);
     getch();
 }
